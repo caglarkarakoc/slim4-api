@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+        backupGlobals="false"
+        colors="true">
+    <testsuites>
+        <testsuite name="Api Tests">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">app</directory>
+            <exclude>
+                <directory>bootstrap</directory>
+                <directory>config</directory>
+                <directory>database</directory>
+                <directory>build</directory>
+                <directory>public</directory>
+                <directory>vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -1,0 +1,12 @@
+/build/
+/coverage/
+/vendor/
+/var/logs/*
+.env
+.env.backup
+.idea/
+.vscodes
+.phpunit.result.cache
+.env
+.env.backup
+.DS_Store
